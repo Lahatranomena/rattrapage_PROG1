@@ -26,3 +26,16 @@ function Ranger(tableau) {
 }
 
 console.log(Ranger([0, 1, 0, 0, 1, 0]));
+
+function NombreUn(tableau) {
+    let compteur = 0
+
+    for (let i = 0; i < tableau.length; i++) {
+        if (tableau[i] == 1) {
+            compteur = compteur + 1
+        }
+    }
+    return compteur
+}
+
+console.log(NombreUn([0, 0, 1, 0, 1, 1, 0, 1, 1]));
