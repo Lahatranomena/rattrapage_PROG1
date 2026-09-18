@@ -39,3 +39,27 @@ function NombreUn(tableau) {
 }
 
 console.log(NombreUn([0, 0, 1, 0, 1, 1, 0, 1, 1]));
+
+function triLignes(M) {
+    let resultat = []
+
+    for (let i = 0; i < M.length; i++) {
+        resultat = resultat + NombreUn(M[i])
+
+        let valeurMin = 0
+        let indexGauche = 0
+        for (let j = 0; j < resultat.length; j++) {
+            if (resultat[j] == valeurMin) {
+                
+            }
+        }
+    }
+    return resultat
+}
+
+console.log(triLignes([ 
+  [0, 0, 1, 1], 
+  [0, 0, 0, 1], 
+  [1, 1, 1, 1], 
+  [0, 0, 0, 0] 
+] ));
